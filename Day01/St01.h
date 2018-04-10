@@ -6,8 +6,20 @@
 #define PROJECT_ST01_H
 
 
+#include <ostream>
+
 class St01 {
 
+public:
+    St01();
+
+    virtual ~St01();
+
+    friend ostream &operator<<(ostream &os, const St01 &st01);
+
+private:
+    int max(int a,int b);
+    int max(int a,int b,int c);
 };
 
 
